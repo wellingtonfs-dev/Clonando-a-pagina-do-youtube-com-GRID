@@ -1,14 +1,10 @@
-.body{
-    display: grid;    
-    grid-template-rows: auto 1fr;
-    grid-template-columns: auto auto;
-    grid-template-areas: "header header" "aside main";   
-}
-
 .menu{
     display: flex;
-    justify-content: space-between;    
-    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    max-height: 56px;
+    padding: 10px 24px 10px 24px;  
 }
 
 .menu-principal {
@@ -64,14 +60,14 @@
 
 .sidebar{
     display: flex;
-    flex-direction: column;    
-    grid-area: aside;
+    flex-direction: column;     
     width: 218px;
     height: 968px;
     top: 56px;
     padding: 24px;
     gap: 22px;
     p{
+        display: inline;
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
         font-weight: 400;
@@ -80,15 +76,12 @@
     }
 }
 
-.sidebar svg, p{
-    display: inline-block;    
-    margin-right: 20px;
-        
+.sidebar svg, p{  
+    margin-right: 30px;            
 }
 
-.video-container{ 
-    grid-area: main;    
-    width: 900px;
+.video-container{       
+    width: 1220px;
     height: 968px ;    
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -109,11 +102,15 @@
 .logo{    
     width: 42px;
     height: 42px;
+    margin-right: 20px;
 }
 
-.logo, .titulo-videos{
+.logo-titulo{
     display: inline-flex;
+    align-items: center;
 }
+
+
 
 .titulo-videos{     
     font-family: "Roboto", sans-serif;
@@ -124,13 +121,12 @@
 }
 
 .infos {
-    text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
     color: #515151;
     line-height: 14.06px;
-    margin: 0;        
+    margin-left: 62px;        
 }
 
 
