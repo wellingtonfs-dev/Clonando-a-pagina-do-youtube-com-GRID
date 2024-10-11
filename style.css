@@ -76,8 +76,10 @@
     }
 }
 
-.sidebar svg, p{  
-    margin-right: 30px;            
+.sidebar div{
+    display: flex;    
+    align-items: center;
+    gap: 16px;     
 }
 
 .video-container{       
@@ -128,5 +130,6 @@
     line-height: 14.06px;
     margin-left: 62px;        
 }
+
 
 
